@@ -10,8 +10,3 @@ maintainers:
     email: michael@prefect.io
 sources:
   - https://github.com/PrefectHQ/server
-dependencies:
-- name: postgresql
-  version: "11.x.x"
-  repository: https://charts.bitnami.com/bitnami
-  condition: postgresql.useSubChart
