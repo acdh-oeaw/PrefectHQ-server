@@ -4,44 +4,34 @@ entries:
   - apiVersion: v2
     appVersion: 2022.09.23
     created: "2022-09-23T16:08:48.893001985Z"
-    dependencies:
-    - condition: postgresql.useSubChart
-      name: postgresql
-      repository: https://charts.bitnami.com/bitnami
-      version: 11.x.x
     description: Prefect Server application bundle
     digest: 12d0acf63f49ed83b3dad40823c071f51f6efb7ad10a69983bb0a402ab36c8f3
-    home: https://github.com/PrefectHQ
+    home: https://github.com/acdh-oeaw/PrefectHQ-server
     maintainers:
     - email: michael@prefect.io
       name: madkinsz
     name: prefect-server
     sources:
-    - https://github.com/PrefectHQ/server
+    - https://github.com/acdh-oeaw/PrefectHQ-server/server
     type: application
     urls:
-    - https://prefecthq.github.io/server/charts/prefect-server-2022.09.23.tgz
+    - https://acdh-oeaw.github.io/PrefectHQ-server/charts/prefect-server-2022.09.23.tgz
     version: 2022.09.23
   - apiVersion: v2
     appVersion: 2022.09.07
     created: "2022-09-07T20:28:52.348893558Z"
-    dependencies:
-    - condition: postgresql.useSubChart
-      name: postgresql
-      repository: https://charts.bitnami.com/bitnami
-      version: 11.x.x
     description: Prefect Server application bundle
     digest: cc338ae025f923cd1bdb1ec992bc4433b6bbdb14a18757935c631ff358b562ae
-    home: https://github.com/PrefectHQ
+    home: https://github.com/acdh-oeaw/PrefectHQ-server
     maintainers:
     - email: michael@prefect.io
       name: madkinsz
     name: prefect-server
     sources:
-    - https://github.com/PrefectHQ/server
+    - https://github.com/acdh-oeaw/PrefectHQ-server/server
     type: application
     urls:
-    - https://prefecthq.github.io/server/charts/prefect-server-2022.09.07.tgz
+    - https://acdh-oeaw.github.io/PrefectHQ-server/charts/prefect-server-2022.09.07.tgz
     version: 2022.09.07
   - apiVersion: v2
     appVersion: 2022.04.14
@@ -53,16 +43,16 @@ entries:
       version: ~9.3.2
     description: Prefect Server application bundle
     digest: f00602453e0fe3c034363d49d013c3f1ca8299bd7a546df0d59bff2a86d67dba
-    home: https://github.com/PrefectHQ
+    home: https://github.com/acdh-oeaw/PrefectHQ-server
     maintainers:
     - email: michael@prefect.io
       name: madkinsz
     name: prefect-server
     sources:
-    - https://github.com/PrefectHQ/server
+    - https://github.com/acdh-oeaw/PrefectHQ-server/server
     type: application
     urls:
-    - https://prefecthq.github.io/server/charts/prefect-server-2022.04.14.tgz
+    - https://acdh-oeaw.github.io/PrefectHQ-server/charts/prefect-server-2022.04.14.tgz
     version: 2022.04.14
   - apiVersion: v2
     appVersion: 2022.03.29
@@ -74,16 +64,16 @@ entries:
       version: ~9.3.2
     description: Prefect Server application bundle
     digest: e6079950b418e678e41de37029f59c0e5db4c6a6bb1a041d95073700c9159eae
-    home: https://github.com/PrefectHQ
+    home: https://github.com/acdh-oeaw/PrefectHQ-server
     maintainers:
     - email: michael@prefect.io
       name: madkinsz
     name: prefect-server
     sources:
-    - https://github.com/PrefectHQ/server
+    - https://github.com/acdh-oeaw/PrefectHQ-server/server
     type: application
     urls:
-    - https://prefecthq.github.io/server/charts/prefect-server-2022.03.29.tgz
+    - https://acdh-oeaw.github.io/PrefectHQ-server/charts/prefect-server-2022.03.29.tgz
     version: 2022.03.29
   - apiVersion: v2
     appVersion: 2022.01.25
@@ -95,16 +85,16 @@ entries:
       version: ~9.3.2
     description: Prefect Server application bundle
     digest: c40adfb185f1e46050d35191f4d522bcce950274f26a01d24d3888913d638af9
-    home: https://github.com/PrefectHQ
+    home: https://github.com/acdh-oeaw/PrefectHQ-server
     maintainers:
     - email: michael@prefect.io
       name: madkinsz
     name: prefect-server
     sources:
-    - https://github.com/PrefectHQ/server
+    - https://github.com/acdh-oeaw/PrefectHQ-server/server
     type: application
     urls:
-    - https://prefecthq.github.io/server/charts/prefect-server-2022.01.25.tgz
+    - https://acdh-oeaw.github.io/PrefectHQ-server/charts/prefect-server-2022.01.25.tgz
     version: 2022.01.25
   - apiVersion: v2
     appVersion: 2022.01.12
@@ -116,16 +106,16 @@ entries:
       version: ~9.3.2
     description: Prefect Server application bundle
     digest: 8beaae61e36b1691a08ab83040fac8d74069fea2e9641cc864b3e3cff57d3bd5
-    home: https://github.com/PrefectHQ
+    home: https://github.com/acdh-oeaw/PrefectHQ-server
     maintainers:
     - email: michael@prefect.io
       name: madkinsz
     name: prefect-server
     sources:
-    - https://github.com/PrefectHQ/server
+    - https://github.com/acdh-oeaw/PrefectHQ-server/server
     type: application
     urls:
-    - https://prefecthq.github.io/server/charts/prefect-server-2022.01.12.tgz
+    - https://acdh-oeaw.github.io/PrefectHQ-server/charts/prefect-server-2022.01.12.tgz
     version: 2022.01.12
   - apiVersion: v2
     appVersion: 2021.11.30
@@ -137,16 +127,16 @@ entries:
       version: ~9.3.2
     description: Prefect Server application bundle
     digest: 4e32002188a03aeb9e2f73f104f66ee13c2df8711d5935eb63b8e2b2c30b5247
-    home: https://github.com/PrefectHQ
+    home: https://github.com/acdh-oeaw/PrefectHQ-server
     maintainers:
     - email: michael@prefect.io
       name: madkinsz
     name: prefect-server
     sources:
-    - https://github.com/PrefectHQ/server
+    - https://github.com/acdh-oeaw/PrefectHQ-server/server
     type: application
     urls:
-    - https://prefecthq.github.io/server/charts/prefect-server-2021.11.30.tgz
+    - https://acdh-oeaw.github.io/PrefectHQ-server/charts/prefect-server-2021.11.30.tgz
     version: 2021.11.30
   - apiVersion: v2
     appVersion: 2021.11.09
@@ -158,16 +148,16 @@ entries:
       version: ~9.3.2
     description: Prefect Server application bundle
     digest: 22bfc2f56b8c73ce637ba211d2e09fb5f7ffc72ed553f9b30189a0787126fec2
-    home: https://github.com/PrefectHQ
+    home: https://github.com/acdh-oeaw/PrefectHQ-server
     maintainers:
     - email: michael@prefect.io
       name: madkinsz
     name: prefect-server
     sources:
-    - https://github.com/PrefectHQ/server
+    - https://github.com/acdh-oeaw/PrefectHQ-server/server
     type: application
     urls:
-    - https://prefecthq.github.io/server/charts/prefect-server-2021.11.09.tgz
+    - https://acdh-oeaw.github.io/PrefectHQ-server/charts/prefect-server-2021.11.09.tgz
     version: 2021.11.09
   - apiVersion: v2
     appVersion: 2021.10.21
@@ -179,16 +169,16 @@ entries:
       version: ~9.3.2
     description: Prefect Server application bundle
     digest: 9f8407ecfed13bda288e9371832fa2f8626e4c94f4cdfa2abce780312d7eea5e
-    home: https://github.com/PrefectHQ
+    home: https://github.com/acdh-oeaw/PrefectHQ-server
     maintainers:
     - email: michael@prefect.io
       name: madkinsz
     name: prefect-server
     sources:
-    - https://github.com/PrefectHQ/server
+    - https://github.com/acdh-oeaw/PrefectHQ-server/server
     type: application
     urls:
-    - https://prefecthq.github.io/server/charts/prefect-server-2021.10.21.tgz
+    - https://acdh-oeaw.github.io/PrefectHQ-server/charts/prefect-server-2021.10.21.tgz
     version: 2021.10.21
   - apiVersion: v2
     appVersion: 2021.09.02
@@ -200,16 +190,16 @@ entries:
       version: ~9.3.2
     description: Prefect Server application bundle
     digest: 6eb1e0b0ec7df4d5cb780cbb5d86a1dd3289c3f384597311940fbe5ce79fc865
-    home: https://github.com/PrefectHQ
+    home: https://github.com/acdh-oeaw/PrefectHQ-server
     maintainers:
     - email: michael@prefect.io
       name: madkinsz
     name: prefect-server
     sources:
-    - https://github.com/PrefectHQ/server
+    - https://github.com/acdh-oeaw/PrefectHQ-server/server
     type: application
     urls:
-    - https://prefecthq.github.io/server/charts/prefect-server-2021.09.02.tgz
+    - https://acdh-oeaw.github.io/PrefectHQ-server/charts/prefect-server-2021.09.02.tgz
     version: 2021.09.02
   - apiVersion: v2
     appVersion: 2021.07.06
@@ -221,16 +211,16 @@ entries:
       version: ~9.3.2
     description: Prefect Server application bundle
     digest: 909f0af138be234f4fa67890883aac8484e4fc83ef347d83330600b2092791b9
-    home: https://github.com/PrefectHQ
+    home: https://github.com/acdh-oeaw/PrefectHQ-server
     maintainers:
     - email: michael@prefect.io
       name: madkinsz
     name: prefect-server
     sources:
-    - https://github.com/PrefectHQ/server
+    - https://github.com/acdh-oeaw/PrefectHQ-server/server
     type: application
     urls:
-    - https://prefecthq.github.io/server/charts/prefect-server-2021.07.06.tgz
+    - https://acdh-oeaw.github.io/PrefectHQ-server/charts/prefect-server-2021.07.06.tgz
     version: 2021.07.06
   - apiVersion: v2
     appVersion: 2021.05.25
@@ -242,16 +232,16 @@ entries:
       version: ~9.3.2
     description: Prefect Server application bundle
     digest: dbdcee843ea23a12fdc331c49b656486893f08096663b743020d040ae3807ff7
-    home: https://github.com/PrefectHQ
+    home: https://github.com/acdh-oeaw/PrefectHQ-server
     maintainers:
     - email: michael@prefect.io
       name: madkinsz
     name: prefect-server
     sources:
-    - https://github.com/PrefectHQ/server
+    - https://github.com/acdh-oeaw/PrefectHQ-server/server
     type: application
     urls:
-    - https://prefecthq.github.io/server/charts/prefect-server-2021.05.25.tgz
+    - https://acdh-oeaw.github.io/PrefectHQ-server/charts/prefect-server-2021.05.25.tgz
     version: 2021.05.25
   - apiVersion: v2
     appVersion: 2021.04.27
@@ -263,16 +253,16 @@ entries:
       version: ~9.3.2
     description: Prefect Server application bundle
     digest: eac06e7e06d71a6e782eac18b1823edea22c19498962c3711211cbad911202ba
-    home: https://github.com/PrefectHQ
+    home: https://github.com/acdh-oeaw/PrefectHQ-server
     maintainers:
     - email: michael@prefect.io
       name: madkinsz
     name: prefect-server
     sources:
-    - https://github.com/PrefectHQ/server
+    - https://github.com/acdh-oeaw/PrefectHQ-server/server
     type: application
     urls:
-    - https://prefecthq.github.io/server/charts/prefect-server-2021.04.27.tgz
+    - https://acdh-oeaw.github.io/PrefectHQ-server/charts/prefect-server-2021.04.27.tgz
     version: 2021.04.27
   - apiVersion: v2
     appVersion: 2021.04.06
@@ -284,16 +274,16 @@ entries:
       version: ~9.3.2
     description: Prefect Server application bundle
     digest: 79bbcd789a95a5d42f1558b125d2663b6011ba3ff5e519bc26f896167132566d
-    home: https://github.com/PrefectHQ
+    home: https://github.com/acdh-oeaw/PrefectHQ-server
     maintainers:
     - email: michael@prefect.io
       name: madkinsz
     name: prefect-server
     sources:
-    - https://github.com/PrefectHQ/server
+    - https://github.com/acdh-oeaw/PrefectHQ-server/server
     type: application
     urls:
-    - https://prefecthq.github.io/server/charts/prefect-server-2021.04.06.tgz
+    - https://acdh-oeaw.github.io/PrefectHQ-server/charts/prefect-server-2021.04.06.tgz
     version: 2021.04.06
   - apiVersion: v2
     appVersion: 2021.03.20
@@ -305,16 +295,16 @@ entries:
       version: ~9.3.2
     description: Prefect Server application bundle
     digest: f6ee90938cc537065da179fa4451f98b353c9fb9b2a37f3283b5abdc5463956b
-    home: https://github.com/PrefectHQ
+    home: https://github.com/acdh-oeaw/PrefectHQ-server
     maintainers:
     - email: michael@prefect.io
       name: madkinsz
     name: prefect-server
     sources:
-    - https://github.com/PrefectHQ/server
+    - https://github.com/acdh-oeaw/PrefectHQ-server/server
     type: application
     urls:
-    - https://prefecthq.github.io/server/charts/prefect-server-2021.03.20.tgz
+    - https://acdh-oeaw.github.io/PrefectHQ-server/charts/prefect-server-2021.03.20.tgz
     version: 2021.03.20
   - apiVersion: v2
     appVersion: 2021.03.10
@@ -326,16 +316,16 @@ entries:
       version: ~9.3.2
     description: Prefect Server application bundle
     digest: 68d911e4b8edbf00a3d1f4884f080822cd6d52bbe16289b0e69774518caf04fd
-    home: https://github.com/PrefectHQ
+    home: https://github.com/acdh-oeaw/PrefectHQ-server
     maintainers:
     - email: michael@prefect.io
       name: madkinsz
     name: prefect-server
     sources:
-    - https://github.com/PrefectHQ/server
+    - https://github.com/acdh-oeaw/PrefectHQ-server/server
     type: application
     urls:
-    - https://prefecthq.github.io/server/charts/prefect-server-2021.03.10.tgz
+    - https://acdh-oeaw.github.io/PrefectHQ-server/charts/prefect-server-2021.03.10.tgz
     version: 2021.03.10
   - apiVersion: v2
     appVersion: 21.10.21
@@ -347,16 +337,16 @@ entries:
       version: ~9.3.2
     description: Prefect Server application bundle
     digest: 7bbe0690c797f9b6b0d13b34585088ae9e42d915da2ee31df1a6ed2c770ea1bc
-    home: https://github.com/PrefectHQ
+    home: https://github.com/acdh-oeaw/PrefectHQ-server
     maintainers:
     - email: michael@prefect.io
       name: madkinsz
     name: prefect-server
     sources:
-    - https://github.com/PrefectHQ/server
+    - https://github.com/acdh-oeaw/PrefectHQ-server/server
     type: application
     urls:
-    - https://prefecthq.github.io/server/charts/prefect-server-21.10.21.tgz
+    - https://acdh-oeaw.github.io/PrefectHQ-server/charts/prefect-server-21.10.21.tgz
     version: 21.10.21
   - apiVersion: v2
     appVersion: 21.07.06
@@ -368,15 +358,15 @@ entries:
       version: ~9.3.2
     description: Prefect Server application bundle
     digest: 6eb360d594b044070138755e3d6a907b10efa2cd94ab104f6559b12dcc28b384
-    home: https://github.com/PrefectHQ
+    home: https://github.com/acdh-oeaw/PrefectHQ-server
     maintainers:
     - email: michael@prefect.io
       name: madkinsz
     name: prefect-server
     sources:
-    - https://github.com/PrefectHQ/server
+    - https://github.com/acdh-oeaw/PrefectHQ-server/server
     type: application
     urls:
-    - https://prefecthq.github.io/server/charts/prefect-server-21.07.06.tgz
+    - https://acdh-oeaw.github.io/PrefectHQ-server/charts/prefect-server-21.07.06.tgz
     version: 21.07.06
 generated: "2022-09-23T16:08:48.8873371Z"
