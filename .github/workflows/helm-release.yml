@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           fetch-depth: 0
 
@@ -23,11 +23,11 @@ jobs:
           echo ::set-output name=VERSION::$(echo $GITHUB_REF | cut -d / -f 3)
           echo ::set-output name=CORE_VERSION::$(\
             git ls-remote --tags --refs --sort="v:refname" \
-            https://github.com/PrefectHQ/prefect.git | grep "tags/1." | tail -n1 | sed 's/.*\///' \
+            https://github.com/acdh-oeaw/PrefectHQ-serverprefect.git | grep "tags/1." | tail -n1 | sed 's/.*\///' \
           )
           echo ::set-output name=UI_VERSION::$(\
             git ls-remote --tags --refs --sort="v:refname" \
-            https://github.com/PrefectHQ/ui.git | tail -n1 | sed 's/.*\///' \
+            https://github.com/acdh-oeaw/PrefectHQ-serverui.git | tail -n1 | sed 's/.*\///' \
           )
 
       - name: Configure Git
@@ -36,23 +36,23 @@ jobs:
           git config user.email "$GITHUB_ACTOR@users.noreply.github.com"
 
       - name: Install Helm
-        uses: azure/setup-helm@v1
+        uses: azure/setup-helm@v3
         with:
-          version: v3.4.1
+          version: v3.11.1
 
-      - name: Prepare GPG key for signing
-        run: |
-          gpg_dir=/tmp/.gpg
-          mkdir "$gpg_dir"
-          keyring="$gpg_dir/secring.gpg"
-          base64 -d <<< "$GPG_KEYRING_BASE64" > "$keyring"
-          passphrase_file="$gpg_dir/passphrase"
-          echo "$GPG_PASSPHRASE" > "$passphrase_file"
-          echo "SIGN_PASSPHRASE_FILE=$passphrase_file" >> "$GITHUB_ENV"
-          echo "SIGN_KEYRING=$keyring" >> "$GITHUB_ENV"
-        env:
-          GPG_KEYRING_BASE64: "${{ secrets.GPG_KEYRING_BASE64 }}"
-          GPG_PASSPHRASE: "${{ secrets.GPG_PASSPHRASE }}"
+#      - name: Prepare GPG key for signing
+#        run: |
+#          gpg_dir=/tmp/.gpg
+#          mkdir "$gpg_dir"
+#          keyring="$gpg_dir/secring.gpg"
+#          base64 -d <<< "$GPG_KEYRING_BASE64" > "$keyring"
+#          passphrase_file="$gpg_dir/passphrase"
+#          echo "$GPG_PASSPHRASE" > "$passphrase_file"
+#          echo "SIGN_PASSPHRASE_FILE=$passphrase_file" >> "$GITHUB_ENV"
+#          echo "SIGN_KEYRING=$keyring" >> "$GITHUB_ENV"
+#        env:
+#          GPG_KEYRING_BASE64: "${{ secrets.GPG_KEYRING_BASE64 }}"
+#          GPG_PASSPHRASE: "${{ secrets.GPG_PASSPHRASE }}"
 
       - name: Add dependency chart repos
         run: |
@@ -70,22 +70,23 @@ jobs:
             --destination /tmp/chart \
             --dependency-update \
             --version $VERSION \
-            --app-version $VERSION \
-            --sign --key 'michael@prefect.io' \
-            --keyring $SIGN_KEYRING \
-            --passphrase-file $SIGN_PASSPHRASE_FILE
+            --app-version $VERSION
+#\
+#  --sign --key 'michael@prefect.io' \
+#  --keyring $SIGN_KEYRING \
+#  --passphrase-file $SIGN_PASSPHRASE_FILE
         env:
           VERSION: ${{ steps.get_version.outputs.VERSION }}
           CORE_VERSION: ${{ steps.get_version.outputs.CORE_VERSION }}
           UI_VERSION: ${{ steps.get_version.outputs.UI_VERSION }}
-          SIGN_KEYRING: ${{ env.SIGN_KEYRING }}
-          SIGN_PASSPHRASE_FILE: ${{ env.SIGN_PASSPHRASE_FILE }}
+#          SIGN_KEYRING: ${{ env.SIGN_KEYRING }}
+#          SIGN_PASSPHRASE_FILE: ${{ env.SIGN_PASSPHRASE_FILE }}
 
       - name: Update chart index
         run: |
           git stash  # Stash changes to the values.yaml so checkout doesn't complain
           git checkout gh-pages
-          helm repo index /tmp/chart --url https://prefecthq.github.io/server/charts --merge ./index.yaml
+          helm repo index /tmp/chart --url https://acdh-oeaw.github.io/PrefectHQ-server/charts --merge ./index.yaml
 
       - name: Commit and push 
         run: |
